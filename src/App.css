@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Sail&family=Jost:wght@400;500&display=swap");
+
+.template-container {
+  max-width: 100vw;
+  padding: 24px 0px 0px;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.event-type {
+  font-family: "Sail";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46.16px;
+  text-align: center;
+  color: #586245;
+  margin: 0px;
+  margin-right: 100px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu-item {
+  list-style-type: none;
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.12px;
+  text-align: center;
+  color: #586245;
+  margin: 0px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-main-container {
+  width: 1274px;
+  height: 848px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 110px 32px 0px 0px;
+}
+
+.couple-names {
+  font-family: "Sail";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 71.55px;
+  margin: 0px;
+}
+
+.wedding-date {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  color: #5c5c5c;
+}
+
+.flower-img {
+  width: 140px;
+  height: 49px;
+}
+
+.time-left-container {
+  display: flex;
+  align-items: center;
+}
+
+.time-left-card {
+  margin: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #586245;
+}
+
+.time-left-number {
+  margin: 0px;
+  font-family: "Sail";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 71.55px;
+}
+
+.time-left-text {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+}
+
+.couple-main-img {
+  width: 456px;
+  height: 572px;
+  margin: 72px 100px 0px 0px;
+}
+
+.home-frame {
+  position: absolute;
+  width: 90%;
+  height: 848px;
+}
+
+.home-bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-bottom-text-container {
+  width: 25%;
+}
+
+.right {
+  text-align: right;
+}
+
+.home-bottom-text-container-heading {
+  font-family: "Sail";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55.39px;
+}
+
+.home-bottom-text-container-message {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+
+  color: #5c5c5c;
+}
+
+.small-frame {
+  width: 360px;
+  height: 360px;
+  background-image: url("https://res.cloudinary.com/drbnxuf21/image/upload/v1711648219/story-shape-6_1_dyefj1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.couple-cartoon-img {
+  width: 302px;
+  height: 422px;
+}
+
+.menu-item-heading {
+  font-family: "Sail";
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 71.55px;
+}
+
+.schedules-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event-name {
+  font-family: "Sail";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.31px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  text-align: center;
+  color: #5c5c5c;
+  margin: 0px;
+}
+
+.event-time {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  text-align: center;
+  color: #5c5c5c;
+  margin: 0px;
+}
+
+.rsvp-container {
+  width: 80%;
+  height: 705px;
+  background-image: url("https://res.cloudinary.com/drbnxuf21/image/upload/v1711653116/Rectangle_227_1_yfdbiz.png");
+  background-size: cover;
+  padding: 54px 80px;
+  margin: 60px 0px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.rsvp-card {
+  width: 545px;
+  background-color: white;
+  padding: 32px;
+}
+
+.rsvp-card-heading {
+  font-family: "Sail";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55.39px;
+  margin: 0px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.horizontal-line {
+  margin-bottom: 32px;
+}
+
+.rsvp-question {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.radio-card {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.radio-button {
+  border: solid 1px #bdbebc;
+  margin: 0px;
+  margin-right: 8px;
+}
+
+.radio-label {
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+  text-align: left;
+}
+
+.rsvp-button {
+  width: 141px;
+  height: 43px;
+  background-color: #586245;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.01px;
+  color: white;
+  border: none;
+  margin-bottom: 45px;
+}
+
+.main-events-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-event-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-event-img {
+  width: 316px;
+  height: 386px;
+}
+
+.main-event-frame {
+  width: 430px;
+  height: 430px;
+  background-image: url("https://res.cloudinary.com/drbnxuf21/image/upload/v1711648219/story-shape-6_1_dyefj1.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-event-name {
+  font-family: "Sail";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55.39px;
+  text-align: center;
+}
+
+.main-event-date-and-time {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.01px;
+  text-align: center;
+  color: #c8a898;
+}
+
+.main-event-venue {
+  width: 80%;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.9px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.google-map {
+  width: 90%;
+  margin: 45px 0px;
+}
+
+.album-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f3ee;
+  padding: 45px 0px;
+}
+
+.album-background-section {
+  width: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-flower-img {
+  height: 100vh;
+}
+
+.footer-container {
+  height: 50vh;
+  background-color: #2d2420;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text-container {
+  width: 50%;
+}
+
+.final-invitation {
+  font-family: "Jost";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 34.68px;
+  text-align: center;
+  color: white;
+}
+
+.footer-container-menu-list {
+  padding: 0px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container-menu-item {
+  list-style-type: none;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: center;
+  color: white;
+}
+
+.footer-flowers {
+  width: 215.5px;
+  height: 207px;
+
+  left: -17px;
+
+  align-self: flex-end;
+}
+
+.footer-flower {
+  width: 186.14px;
+  height: 174px;
+  align-self: flex-start;
+}
