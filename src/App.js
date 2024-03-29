@@ -187,92 +187,94 @@ const App = () => {
   };
 
   return (
-    <div className="template-container">
-      <div className="nav-bar">
-        <h1 className="event-type">Wedding</h1>
-        <ul className="menu-list">
-          {menuList.map((eachItem) => (
-            <li className="menu-item">{eachItem}</li>
-          ))}
-        </ul>
-      </div>
-      {renderHomeContainer()}
-      <h1 className="menu-item-heading">Schedules</h1>
-      <div className="schedules-container">
-        {schedulesList.map((eachItem) => renderScheduleCard(eachItem))}
-      </div>
-      <div className="rsvp-container">
-        <form className="rsvp-card">
-          <h1 className="rsvp-card-heading">Are You Attending?</h1>
-          <p className="rsvp-question">Name</p>
-          <hr className="horizontal-line" />
-          <p className="rsvp-question">Email</p>
-          <hr className="horizontal-line" />
-          <div className="radio-container">
-            <div className="radio-card">
-              <input
-                id="radio-yes"
-                type="radio"
-                name="reply"
-                className="radio-button"
-              />
-              <label htmlFor="radio-yes" className="radio-label">
-                Yes, I will be there
-              </label>
-            </div>
-            <div className="radio-card">
-              <input
-                id="radio-sorry"
-                type="radio"
-                name="reply"
-                className="radio-button"
-              />
-              <label htmlFor="radio-sorry" className="radio-label">
-                Sorry, I can't come
-              </label>
-            </div>
-          </div>
-          <p className="rsvp-question">Number of Guests</p>
-          <hr className="horizontal-line" />
-          <p className="rsvp-question">What Will You Be Attending</p>
-          <hr className="horizontal-line" />
-          <button className="rsvp-button">RSVP</button>
-        </form>
-      </div>
-      <h1 className="menu-item-heading">When & Where</h1>
-      <div className="main-events-container">
-        {mainEventsList.map((eachItem) => renderMainEventCard(eachItem))}
-      </div>
-      <img
-        alt="google-map"
-        src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711656650/Rectangle_19_spkin5.png"
-        className="google-map"
-      />
-      {renderAlbumContainer()}
-      <div className="footer-container">
-        <img
-          alt="footer-flowers"
-          src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711659451/footer-shape-1_1_ithnfx.png"
-          className="footer-flowers"
-        />
-        <div className="footer-text-container">
-          <p className="final-invitation">
-            Let us come together in the spirit of love and joy, as we embark on
-            this beautiful journey of togetherness. Your presence will add
-            warmth and blessings to our union, making it a celebration to
-            remember in our hearts and souls.
-          </p>
-          <ul className="footer-container-menu-list">
+    <div className="bg-container">
+      <div className="template-container">
+        <div className="nav-bar">
+          <h1 className="event-type">Wedding</h1>
+          <ul className="menu-list">
             {menuList.map((eachItem) => (
-              <li className=" footer-container-menu-item">{eachItem}</li>
+              <li className="menu-item">{eachItem}</li>
             ))}
           </ul>
         </div>
+        {renderHomeContainer()}
+        <h1 className="menu-item-heading">Schedules</h1>
+        <div className="schedules-container">
+          {schedulesList.map((eachItem) => renderScheduleCard(eachItem))}
+        </div>
+        <div className="rsvp-container">
+          <form className="rsvp-card">
+            <h1 className="rsvp-card-heading">Are You Attending?</h1>
+            <p className="rsvp-question">Name</p>
+            <hr className="horizontal-line" />
+            <p className="rsvp-question">Email</p>
+            <hr className="horizontal-line" />
+            <div className="radio-container">
+              <div className="radio-card">
+                <input
+                  id="radio-yes"
+                  type="radio"
+                  name="reply"
+                  className="radio-button"
+                />
+                <label htmlFor="radio-yes" className="radio-label">
+                  Yes, I will be there
+                </label>
+              </div>
+              <div className="radio-card">
+                <input
+                  id="radio-sorry"
+                  type="radio"
+                  name="reply"
+                  className="radio-button"
+                />
+                <label htmlFor="radio-sorry" className="radio-label">
+                  Sorry, I can't come
+                </label>
+              </div>
+            </div>
+            <p className="rsvp-question">Number of Guests</p>
+            <hr className="horizontal-line" />
+            <p className="rsvp-question">What Will You Be Attending</p>
+            <hr className="horizontal-line" />
+            <button className="rsvp-button">RSVP</button>
+          </form>
+        </div>
+        <h1 className="menu-item-heading">When & Where</h1>
+        <div className="main-events-container">
+          {mainEventsList.map((eachItem) => renderMainEventCard(eachItem))}
+        </div>
         <img
-          alt="footer-flower"
-          src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711659451/footer-shape-2_1_mucasy.png"
-          className="footer-flower "
+          alt="google-map"
+          src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711656650/Rectangle_19_spkin5.png"
+          className="google-map"
         />
+        {renderAlbumContainer()}
+        <div className="footer-container">
+          <img
+            alt="footer-flowers"
+            src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711659451/footer-shape-1_1_ithnfx.png"
+            className="footer-flowers"
+          />
+          <div className="footer-text-container">
+            <p className="final-invitation">
+              Let us come together in the spirit of love and joy, as we embark
+              on this beautiful journey of togetherness. Your presence will add
+              warmth and blessings to our union, making it a celebration to
+              remember in our hearts and souls.
+            </p>
+            <ul className="footer-container-menu-list">
+              {menuList.map((eachItem) => (
+                <li className=" footer-container-menu-item">{eachItem}</li>
+              ))}
+            </ul>
+          </div>
+          <img
+            alt="footer-flower"
+            src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711659451/footer-shape-2_1_mucasy.png"
+            className="footer-flower "
+          />
+        </div>
       </div>
     </div>
   );
