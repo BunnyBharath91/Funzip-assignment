@@ -1,3 +1,4 @@
+import Album from "./Album.js";
 import "./App.css";
 
 const menuList = ["HOME", "SCHEDULES", "RSVP", "GALLERY", "GIFT REGISTRY"];
@@ -64,7 +65,7 @@ const App = () => {
   console.log("Hi");
 
   const renderHomeContainer = () => (
-    <div className="home-container">
+    <div id="HOME" className="home-container">
       <div className="home-main-container">
         <div className="home-text-container">
           <h1 className="couple-names">Ritesh & Joya</h1>
@@ -164,27 +165,26 @@ const App = () => {
     );
   };
 
-  const renderAlbumContainer = () => {
-    console.log("HI");
-
-    return (
-      <div className="album-section">
-        <div className="album-background-section">
-          <img
-            alt="flower-img"
-            src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711657192/flower-shape1_1_kmurru.png"
-            className="bg-flower-img"
-          />
-          <img
-            alt="flower-img"
-            src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711657192/flower-shape3_1_gcidug.png"
-            className="bg-flower-img"
-          />
-        </div>
-        <h1 className="menu-item-heading">Album</h1>
+  const renderAlbumContainer = () => (
+    <div id="GALLERY" className="album-section">
+      <div className="album-background-section">
+        <img
+          alt="flower-img"
+          src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711657192/flower-shape1_1_kmurru.png"
+          className="bg-flower-img"
+        />
+        <img
+          alt="flower-img"
+          src="https://res.cloudinary.com/drbnxuf21/image/upload/v1711657192/flower-shape3_1_gcidug.png"
+          className="bg-flower-img"
+        />
       </div>
-    );
-  };
+      <div className="main-album-section">
+        <h1 className="menu-item-heading">Album</h1>
+        <Album />
+      </div>
+    </div>
+  );
 
   return (
     <div className="bg-container">
@@ -193,16 +193,18 @@ const App = () => {
           <h1 className="event-type">Wedding</h1>
           <ul className="menu-list">
             {menuList.map((eachItem) => (
-              <li className="menu-item">{eachItem}</li>
+              <li className="menu-item">
+                <a href={eachItem}>{eachItem}</a>
+              </li>
             ))}
           </ul>
         </div>
         {renderHomeContainer()}
         <h1 className="menu-item-heading">Schedules</h1>
-        <div className="schedules-container">
+        <div id="SCHEDULES" className="schedules-container">
           {schedulesList.map((eachItem) => renderScheduleCard(eachItem))}
         </div>
-        <div className="rsvp-container">
+        <div id="RSVP" className="rsvp-container">
           <form className="rsvp-card">
             <h1 className="rsvp-card-heading">Are You Attending?</h1>
             <p className="rsvp-question">Name</p>

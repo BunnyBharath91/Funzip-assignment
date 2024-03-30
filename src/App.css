@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .template-container {
-  min-width: 1440px;
+  width: 1440px;
   padding: 24px 0px 0px;
   background-color: white;
   display: flex;
@@ -45,6 +45,11 @@
   text-align: center;
   color: #586245;
   margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .home-container {
@@ -381,6 +386,13 @@
 
   display: flex;
   justify-content: space-between;
+}
+
+.main-album-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
 }
 
 .bg-flower-img {
