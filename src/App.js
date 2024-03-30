@@ -193,9 +193,7 @@ const App = () => {
           <h1 className="event-type">Wedding</h1>
           <ul className="menu-list">
             {menuList.map((eachItem) => (
-              <li className="menu-item">
-                <a href={eachItem}>{eachItem}</a>
-              </li>
+              <li className="menu-item">{eachItem}</li>
             ))}
           </ul>
         </div>
